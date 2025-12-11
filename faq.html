@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>よくある質問 | 研究室紹介</title>
+    <!-- Reusing the same stylesheet -->
+    <link rel="stylesheet" href="./src/style.css">
+    <style>
+      /* FAQ Specific Styles */
+      .faq-list {
+        margin-top: 3rem;
+        text-align: left;
+      }
+      
+      details {
+        background: var(--card-bg);
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: background 0.3s;
+      }
+
+      details:hover {
+        background: #252525;
+      }
+
+      summary {
+        padding: 1.5rem;
+        cursor: pointer;
+        font-weight: bold;
+        list-style: none; /* Hide default triangle */
+        position: relative;
+        font-size: 1.2rem;
+        color: var(--text-primary);
+      }
+
+      summary::after {
+        content: '+';
+        position: absolute;
+        right: 1.5rem;
+        font-weight: 300;
+        font-size: 1.5rem;
+      }
+
+      details[open] summary::after {
+        content: '-';
+      }
+
+      .answer {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        color: var(--text-secondary);
+        line-height: 1.8;
+      }
+
+      /* Back button style */
+      .back-link {
+        display: inline-block;
+        margin-top: 2rem;
+        color: var(--text-secondary);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: all 0.3s;
+      }
+      
+      .back-link:hover {
+        color: var(--accent-color);
+        border-bottom-color: var(--accent-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <section class="scroll-section" style="align-items: flex-start; padding-top: 8rem;">
+          <div class="content-wrapper fade-in-section is-visible">
+            <h1>よくある質問</h1>
+            <p>研究室に関するQ&Aをまとめました。</p>
+
+            <div class="faq-list">
+              
+              <!-- 質問アイテムここから -->
+              <details>
+                <summary>コアタイムについて</summary>
+                <div class="answer">
+                  <p>当研究室には厳格なコアタイムはありません。各自の研究進捗に合わせて、自主的にスケジュールを管理することを推奨しています。ただし、週1回の全体ゼミには必ず出席してください。</p>
+                </div>
+              </details>
+              <!-- 質問アイテムここまで -->
+
+              <!-- 質問アイテムここから -->
+              <details>
+                <summary>研究室の雰囲気について</summary>
+                <div class="answer">
+                  <p>学年を問わず活発に議論する雰囲気です。実験で失敗したときも、なぜ失敗したかを全員で面白がりながら分析するような、前向きなカルチャーがあります。イベントや飲み会も自由参加で行われています。</p>
+                </div>
+              </details>
+              <!-- 質問アイテムここまで -->
+
+              <!-- 新しい質問を追加する場合は、上記の「質問アイテム」ブロックをコピーしてください -->
+
+            </div>
+
+            <a href="./index.html" class="back-link">← トップページに戻る</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

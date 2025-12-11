@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>研究室紹介 | 甲状腺術後出血検知システム</title>
+    <meta name="description" content="ウレタンセンサーを用いた甲状腺術後出血の自動検出システムの研究紹介">
+  </head>
+  <body>
+    <div id="app">
+      <!-- To include global header/nav if needed later -->
+      
+      <main>
+        <!-- Hero Section -->
+        <section id="hero" class="scroll-section">
+          <div class="content-wrapper fade-in-section">
+            <h1 class="glitch" data-text="命を守るテクノロジー">命を守るテクノロジー</h1>
+            <p class="subtitle">甲状腺術後出血の早期発見を目指して</p>
+            <div class="scroll-indicator">
+              <span>Scroll</span>
+              <div class="arrow-down"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="problem" class="scroll-section">
+          <div class="content-wrapper fade-in-section">
+            <h2>見えない危険</h2>
+            <div class="text-block">
+              <p>甲状腺の手術後、首の内部で出血が起こることがあります。</p>
+              <p>しかし、皮膚の下で血が溜まっていくため、<span class="highlight-danger">外見からは発見が遅れがちです。</span></p>
+              <p>気道が圧迫され、命に関わる状態になるまで気づかないこともあります。</p>
+              <p>現在、これを確実に自動検出する機器は存在しません。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="scroll-section">
+          <div class="content-wrapper fade-in-section">
+            <h2>「首に巻くだけ」で守る</h2>
+            <div class="text-block">
+              <p>私たちは、柔軟な<strong>ウレタンセンサー</strong>を用いた新しい検出手法を開発しています。</p>
+              <p>首周りのわずかな膨らみをセンサーが感知。</p>
+              <p>患者さんの負担にならず、かつ高精度に異常を知らせるデバイスを目指しています。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="scroll-section">
+          <div class="content-wrapper fade-in-section">
+            <h2>試行錯誤の軌跡</h2>
+            <p class="intro-text">失敗と成功を繰り返し、形にしていく。</p>
+            
+            <div class="process-step">
+              <div class="step-text">
+                <h3>01. 現象の再現</h3>
+                <p>まずは首の模型を3Dプリンタで作成。</p>
+                <p>内部で風船を膨らませることで、血管からの出血による「腫れ」を忠実に再現しました。</p>
+                <p>ここから実験が始まります。</p>
+              </div>
+              <div class="step-image-container">
+                <img src="./assets/model_sketch.png" alt="3Dプリンタ製 甲状腺模型と固定治具" class="step-image">
+                <p class="caption">図1: 固定治具と甲状腺模型 (3D CAD & 実物)</p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-text">
+                <h3>02. プロトタイプ開発</h3>
+                <p>実際に人が装着できる形へ。</p>
+                <p>サポーターやレジン（樹脂）を組み合わせ、センサーを適切な位置に固定する脱着装置を自作。</p>
+                <p>素材選びから加工まで、すべて自分たちの手で行っています。</p>
+              </div>
+              <div class="step-image-container">
+                <img src="./assets/prototype_photo.png" alt="サポーター型デバイスのプロトタイプ" class="step-image">
+                <p class="caption">図2: サポーターとレジンを用いた現在の脱着装置</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA / Footer -->
+        <section id="footer" class="scroll-section">
+          <div class="content-wrapper fade-in-section">
+            <h2>未来の医療を、<br>ここから作る。</h2>
+            <p>自分で考え、手を動かし、形にする。</p>
+            <p>そんな研究に興味はありませんか？</p>
+            <a href="./faq.html" class="cta-button">よくある質問</a>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
