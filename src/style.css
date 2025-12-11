@@ -103,17 +103,22 @@ strong {
 }
 
 .scroll-indicator {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 4rem; 
+  width: 100%; 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* 縦方向の要素（column）を水平方向（左右）に中央揃え */
   gap: 0.5rem;
   opacity: 0.6;
   animation: bounce 2s infinite;
-  padding-bottom: 150px;
+  
+  /* ★★★ 追加・修正点 ★★★ */
+  /* width: 100% のため margin: auto の効果は小さいが、親要素との境界を明確にするために維持 */
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 100% のままだと margin: auto は効かないことが多いので、
+     max-width を設定するか、親要素の幅をそのまま使うことを推奨。
+     もし親要素が幅を持っているなら width: auto または max-content に変えてください。 */
 }
 
 .arrow-down {
@@ -125,9 +130,11 @@ strong {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-  40% { transform: translateX(-50%) translateY(10px); }
-  60% { transform: translateX(-50%) translateY(5px); }
+  /* translateX(-50%) を削除しました。flexboxの align-items: center; で中央配置されるため、
+     transformによるオフセットは不要となり、ズレの原因となるためです。*/
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(10px); }
+  60% { transform: translateY(5px); }
 }
 
 /* Process Section */
