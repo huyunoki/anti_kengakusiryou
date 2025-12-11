@@ -167,16 +167,13 @@ strong {
 }
 
 .caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0,0.7);
-  padding: 0.5rem 1rem;
+  /* Previously absolute positioning was here */
+  background: #1a1a1a; /* Match card background or slightly lighter */
+  padding: 1rem;
   font-size: 0.9rem;
-  color: white;
-  margin: 0;
-  backdrop-filter: blur(4px);
+  color: var(--text-secondary);
+  text-align: center;
+  border-top: 1px solid #333;
 }
 
 /* Footer / CTA */
