@@ -137,6 +137,30 @@ strong {
   60% { transform: translateY(5px); }
 }
 
+/* Split Layout for Problem/Solution */
+.split-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  text-align: left;
+}
+
+.split-layout.reverse {
+  direction: rtl;
+}
+
+.split-layout.reverse .split-text {
+  direction: ltr;
+}
+
+.split-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
 /* Process Section */
 .process-step {
   display: grid;
