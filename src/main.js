@@ -1,5 +1,3 @@
-import './style.css'
-
 // Intersection Observer for Scroll Animations
 const observerOptions = {
   root: null,
